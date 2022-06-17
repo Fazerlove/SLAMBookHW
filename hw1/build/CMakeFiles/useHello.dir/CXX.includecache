@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././include/hello.h
+
+/home/fazer/C++Projects/SLAMBookHW/hw1/useHello.cpp
+hello.h
+/home/fazer/C++Projects/SLAMBookHW/hw1/hello.h
+

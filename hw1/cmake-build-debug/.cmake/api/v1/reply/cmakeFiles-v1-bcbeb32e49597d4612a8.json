@@ -125,8 +125,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug",
-		"source" : "/home/fazer/C++Projects/SLAMBookHW"
+		"build" : "/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug",
+		"source" : "/home/fazer/C++Projects/SLAMBookHW/hw1"
 	},
 	"version" : 
 	{

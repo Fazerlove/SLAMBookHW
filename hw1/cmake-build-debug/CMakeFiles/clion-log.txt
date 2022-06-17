@@ -1,4 +1,4 @@
-/snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/193/bin/ninja/linux/ninja -G Ninja -S /home/fazer/C++Projects/SLAMBookHW -B /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug
+/snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/193/bin/ninja/linux/ninja -G Ninja -S /home/fazer/C++Projects/SLAMBookHW/hw1 -B /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug
+-- Build files have been written to: /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug

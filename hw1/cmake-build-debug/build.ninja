@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug/
+cmake_ninja_workdir = /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug/
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target hello
 
@@ -49,11 +49,11 @@ cmake_ninja_workdir = /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug/
 
 build cmake_object_order_depends_target_hello: phony || CMakeFiles/hello.dir
 
-build CMakeFiles/hello.dir/src/hello.cpp.o: CXX_COMPILER__hello_Release /home/fazer/C++Projects/SLAMBookHW/src/hello.cpp || cmake_object_order_depends_target_hello
+build CMakeFiles/hello.dir/src/hello.cpp.o: CXX_COMPILER__hello_Release /home/fazer/C++Projects/SLAMBookHW/hw1/src/hello.cpp || cmake_object_order_depends_target_hello
   DEFINES = -Dhello_EXPORTS
   DEP_FILE = CMakeFiles/hello.dir/src/hello.cpp.o.d
   FLAGS = -O3 -DNDEBUG -fPIC
-  INCLUDES = -I/home/fazer/C++Projects/SLAMBookHW/./include
+  INCLUDES = -I/home/fazer/C++Projects/SLAMBookHW/hw1/./include
   OBJECT_DIR = CMakeFiles/hello.dir
   OBJECT_FILE_DIR = CMakeFiles/hello.dir/src
 
@@ -75,12 +75,46 @@ build libhello.so: CXX_SHARED_LIBRARY_LINKER__hello_Release CMakeFiles/hello.dir
   TARGET_FILE = libhello.so
   TARGET_PDB = hello.so.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target useHello
+
+
+#############################################
+# Order-only phony target for useHello
+
+build cmake_object_order_depends_target_useHello: phony || cmake_object_order_depends_target_hello
+
+build CMakeFiles/useHello.dir/useHello.cpp.o: CXX_COMPILER__useHello_Release /home/fazer/C++Projects/SLAMBookHW/hw1/useHello.cpp || cmake_object_order_depends_target_useHello
+  DEP_FILE = CMakeFiles/useHello.dir/useHello.cpp.o.d
+  FLAGS = -O3 -DNDEBUG
+  INCLUDES = -I/home/fazer/C++Projects/SLAMBookHW/hw1/./include
+  OBJECT_DIR = CMakeFiles/useHello.dir
+  OBJECT_FILE_DIR = CMakeFiles/useHello.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target useHello
+
+
+#############################################
+# Link the executable useHello
+
+build useHello: CXX_EXECUTABLE_LINKER__useHello_Release CMakeFiles/useHello.dir/useHello.cpp.o | libhello.so || libhello.so
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug  libhello.so
+  OBJECT_DIR = CMakeFiles/useHello.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = useHello
+  TARGET_PDB = useHello.dbg
+
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/ccmake -S/home/fazer/C++Projects/SLAMBookHW -B/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug
+  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/ccmake -S/home/fazer/C++Projects/SLAMBookHW/hw1 -B/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -92,7 +126,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/fazer/C++Projects/SLAMBookHW -B/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug
+  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/fazer/C++Projects/SLAMBookHW/hw1 -B/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +144,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -122,7 +156,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -134,7 +168,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug && /snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -152,9 +186,9 @@ build hello: phony libhello.so
 # =============================================================================
 
 #############################################
-# Folder: /home/fazer/C++Projects/SLAMBookHW/cmake-build-debug
+# Folder: /home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug
 
-build all: phony libhello.so
+build all: phony libhello.so useHello
 
 # =============================================================================
 # Unknown Build Time Dependencies.

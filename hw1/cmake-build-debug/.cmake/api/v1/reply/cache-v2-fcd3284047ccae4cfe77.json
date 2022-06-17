@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug"
+			"value" : "/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -591,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW"
+			"value" : "/home/fazer/C++Projects/SLAMBookHW/hw1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug"
+			"value" : "/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug"
 		},
 		{
 			"name" : "HELLOHOMEWORK_IS_TOP_LEVEL",
@@ -1147,43 +1147,43 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW"
+			"value" : "/home/fazer/C++Projects/SLAMBookHW/hw1"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
+			"name" : "H_DIR",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
+					"value" : "The directory containing a CMake configuration file for H."
 				}
 			],
-			"type" : "STATIC",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug"
+			"type" : "PATH",
+			"value" : "H_DIR-NOTFOUND"
 		},
 		{
-			"name" : "Project_IS_TOP_LEVEL",
+			"name" : "Hello_DIR",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
+					"value" : "The directory containing a CMake configuration file for Hello."
 				}
 			],
-			"type" : "STATIC",
-			"value" : "ON"
+			"type" : "PATH",
+			"value" : "Hello_DIR-NOTFOUND"
 		},
 		{
-			"name" : "Project_SOURCE_DIR",
+			"name" : "hello_DIR",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
+					"value" : "The directory containing a CMake configuration file for hello."
 				}
 			],
-			"type" : "STATIC",
-			"value" : "/home/fazer/C++Projects/SLAMBookHW"
+			"type" : "PATH",
+			"value" : "hello_DIR-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

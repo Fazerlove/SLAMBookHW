@@ -13,3 +13,5 @@ INSTALL(TARGETS hello
         ARCHIVE DESTINATION lib)
 INSTALL(FILES ./include/hello.h DESTINATION include)
 
+ADD_EXECUTABLE(useHello useHello.cpp)
+TARGET_LINK_LIBRARIES(useHello hello)

@@ -16,7 +16,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -31,7 +32,8 @@
 					"name" : "HELLOHOMEWORK",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -40,8 +42,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hello::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello-Release-55d0c63aabb269305132.json",
+					"jsonFile" : "target-hello-Release-19feccab5004507adf27.json",
 					"name" : "hello",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "useHello::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-useHello-Release-2394ada0943fcf243f44.json",
+					"name" : "useHello",
 					"projectIndex" : 0
 				}
 			]
@@ -50,8 +59,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/fazer/C++Projects/SLAMBookHW/cmake-build-debug",
-		"source" : "/home/fazer/C++Projects/SLAMBookHW"
+		"build" : "/home/fazer/C++Projects/SLAMBookHW/hw1/cmake-build-debug",
+		"source" : "/home/fazer/C++Projects/SLAMBookHW/hw1"
 	},
 	"version" : 
 	{
