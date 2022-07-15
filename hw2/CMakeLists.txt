@@ -3,6 +3,8 @@ project(hw2)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories("/usr/local/include/eigen3")
+
 add_executable(hw2
-        CmakeLists.txt
         main.cpp)
+

@@ -1,0 +1,7 @@
+/snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/198/bin/ninja/linux/ninja -G Ninja -S /home/fazer/C++Projects/SLAMBookHW/test -B /home/fazer/C++Projects/SLAMBookHW/test/cmake-build-debug
+-- Found OpenCV: /usr/local (found version "3.4.15") 
+-- opencv_calib3dopencv_coreopencv_dnnopencv_features2dopencv_flannopencv_highguiopencv_imgcodecsopencv_imgprocopencv_mlopencv_objdetectopencv_photoopencv_shapeopencv_stitchingopencv_superresopencv_videoopencv_videoioopencv_videostabopencv_viz
+-- /usr/local/include/usr/local/include/opencv
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fazer/C++Projects/SLAMBookHW/test/cmake-build-debug
